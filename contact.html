@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grany's Child School - Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Grany's Child School Logo" class="logo">
+            <h1 class="school-name">Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h2>We'd Love to Hear From You!</h2>
+            <p>Reach out to us for any questions, feedback, or to schedule a visit. Our team is here to help you.</p>
+        </div>
+    </section>
+
+    <div class="container contact-main">
+        <!-- Contact Info Section -->
+        <section class="contact-info">
+            <div class="contact-card">
+                <img src="images/headmaster.jpg" alt="Headmaster">
+                <h3>MR. JEPHTHAH AFFUM YEBOAH</h3>
+                <p class="contact-role">C.O.O</p>
+                <a href="mailto:jeph74@gmail.com" class="contact-email">jeph74@gmail.com</a>
+                <p class="contact-phone">+233 (0)24 472 7728</p>
+            </div>
+            <div class="contact-card">
+                <img src="images/headmistress.jpg" alt="Headmistress">
+                <h3>MRS. REBECCA AFFUM YEBOAH ACHEAMPOMAA</h3>
+                <p class="contact-role">Headmistress</p>
+                <a href="mailto:acheampomaaaffumyeboah@gmail.com" class="contact-email">acheampomaaaffumyeboah@gmail.com</a>
+                <p class="contact-phone">+233 (0)24 373 4733</p>
+            </div>
+            <div class="contact-card contact-card-alt">
+                <div class="contact-icon">📞</div>
+                <h3>Contact Number</h3>
+                <a href="mailto:acheampomaaaffumyeboah@gmail.com" class="contact-email">acheampomaaaffumyeboah@gmail.com</a>
+                <p class="contact-phone">+233 (0)24 373 4733</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form contact-form-beauty" style="max-width: 600px; margin: 2rem auto 2rem auto; box-shadow: 0 4px 24px rgba(47,79,79,0.08); border-radius: 18px; background: #fff; padding: 2rem 2rem 1.5rem 2rem;">
+            <h2 style="text-align:center; color:#2f4f4f; margin-bottom:1.5rem;">Get in Touch</h2>
+            <form id="contactForm" action="mailto:petboa123@gmail.com" method="POST" enctype="text/plain">
+                <div class="form-row" style="display:flex; flex-wrap:wrap; gap:1rem;">
+                    <input type="text" name="name" placeholder="Your Name" required style="flex:1 1 180px; min-width:0;">
+                    <input type="email" name="email" placeholder="Your Email" required style="flex:1 1 180px; min-width:0;">
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9+()\-\s]{7,}" title="Please enter a valid phone number" style="flex:1 1 180px; min-width:0;">
+                </div>
+                <textarea name="message" placeholder="Your Message" required style="margin-top:1rem; width:100%; min-height:120px; border-radius:10px; border:1px solid #add8e6; padding:1rem;"></textarea>
+                <button type="submit" id="submitBtn" style="margin-top:1.2rem; width:100%; background:linear-gradient(135deg,#2f4f4f 0%,#add8e6 100%); color:white; font-weight:700; font-size:1.1rem; border-radius:22px; padding:12px 0; border:none; cursor:pointer; transition:background 0.2s;">Send Message</button>
+            </form>
+            <div id="thankYouMessage" style="display: none; text-align: center; padding: 20px; background: #e8f5e8; border-radius: 8px; margin-top: 20px;">
+                <h3 style="color: #2f4f4f; margin-bottom: 10px;">Thank You!</h3>
+                <p style="color: #666;">Your message has been sent successfully. We'll get back to you soon!</p>
+            </div>
+        </section>
+
+        <!-- Google Maps Placeholder -->
+        <section class="map map-card" style="width:100vw; max-width:100%; margin-left:calc(-50vw + 50%); margin-right:calc(-50vw + 50%); background:none; box-shadow:none;">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps?q=5.6148185,-0.1869647&hl=en&z=16&output=embed" width="100%" height="400" style="border:0; border-radius:18px; box-shadow:0 4px 32px rgba(47,79,79,0.12);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="copyright-year"></span> Grany's Child School. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

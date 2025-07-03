@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grany's Child School - Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Grany's Child School Logo" class="logo">
+            <h1 class="school-name">Our School Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="gallery-intro">
+            <h2 class="section-title">School Life in Pictures</h2>
+            <p>Explore our vibrant school community through these beautiful moments captured in our gallery. Click on any image to view it in full size.</p>
+        </div>
+
+        <div class="loading-indicator" id="loading-indicator">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading gallery images...</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid" style="display: none;">
+            <!-- Gallery items will be dynamically loaded here -->
+        </div>
+
+        <div class="gallery-stats" id="gallery-stats" style="display: none;">
+            <p><strong id="image-count">0</strong> beautiful moments captured in our gallery</p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Back to Top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="copyright-year"></span> Grany's Child School. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script>
+        // Back to Top functionality
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
